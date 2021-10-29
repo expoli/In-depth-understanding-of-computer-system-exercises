@@ -28,11 +28,11 @@ int tsub_ok(int x, int y) {
 }
 
 /**
- * I can't found out what value will make mistake.
+ * When y is the INT_MIN this function will work wrong.
  * @return
  */
 int main() {
     printf("%d\n", tsub_ok(INT_MIN, 1));
-    printf("%d\n", tsub_ok(INT_MAX, -1));
+    printf("%d\n", tsub_ok(0, INT_MIN));
     return 0;
 }
