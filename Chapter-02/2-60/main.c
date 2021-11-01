@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_INDEX (32/8-1)
+#define MAX_INDEX (sizeof (int )-1)
 typedef unsigned char *byte_pointer;
 
 void show_bytes(byte_pointer start, size_t len) {
